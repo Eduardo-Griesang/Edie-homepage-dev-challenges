@@ -1,0 +1,61 @@
+:root{
+    --dark-gray: #333333;
+    --blue: #2D9CDB;
+    --gray: #4F4F4F;
+    --light-gray: #828282;
+    --footer-back: #100E1D;
+    --white: #FFFFFF;
+    --red: #EB5757;
+    --green: #27AE60;
+    --yellow: #F2C94C;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.title{
+    color: var(--dark-gray);
+    font-weight: 500;
+    font-size: 3em;
+    line-height: 1.5em;
+}
+
+.sub__title{
+    color: var(--dark-gray);
+    font-weight: 500;
+    font-size: 2.25em;
+    line-height: 1.5em;
+    margin-bottom: 1.7em;
+    width: 23%;
+}
+
+@media screen and (max-width: 1024px) {
+    .sub__title{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .title{
+        font-size: 2.3em;
+    }
+    .sub__title{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .title{
+        font-size: 1.5em;
+        width: 80%;
+    }
+    .sub__title{
+        font-size: 1.5em;
+        width: 70%;
+    }
+}

@@ -1,0 +1,64 @@
+footer{
+    background: var(--footer-back);
+    display: flex;
+    justify-content: space-between;
+    padding: 2.875em 10.5em 2.875em 10.5em;
+}
+
+.nav{
+    display: flex;
+    flex-direction: column;
+}
+
+.nav__links{
+    color: var(--white);
+    font-size: 1.125em;
+    font-weight: 400;
+    line-height: 2.25em;
+}
+
+.media__logo{
+    color: #F2F2F2;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 800;
+    font-size: 2.25em;
+    font-style: bolder;
+    margin-bottom: 0.5em;
+}
+
+.media__links-img{
+    margin-right: 0.5em;
+}
+
+.email__btn{
+    margin-bottom: 0;
+    max-height: 3em;
+}
+
+.about__contact{
+    margin-top: 0;
+}
+
+@media screen and (max-width: 1024px) {
+    footer{
+        padding: 2em 8em 2em 8em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    footer{
+        flex-direction: column;
+    }
+    .nav{
+        margin-bottom: 4em;
+    }
+    .media__links-img{
+        margin-bottom: 4em;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    footer{
+        padding: 2em 2em 2em 2em ;
+    }
+}

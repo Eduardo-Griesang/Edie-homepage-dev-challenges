@@ -1,0 +1,113 @@
+.services{
+    margin-left: 10.3125em;
+    margin-right: 2.7%;
+    margin-bottom: 12.125em;
+}
+
+.services__cards{
+    display: flex;
+    margin-right: 2em;
+}
+
+.services__card{
+    border-radius: 24px;
+    padding: 2.875em 2.125em 2.875em 2.125em;
+}
+
+.services__card:hover{
+    background: var(--white);
+    box-shadow: 0 0 20px var(--dark-gray);
+}
+
+.icon{
+    color: var(--white);
+    border-radius: 16px;
+    padding: 0.7em;
+    margin-bottom: 1.5em;
+}
+
+.blue{
+    background: var(--blue);
+}
+
+.green{
+    background: var(--green);
+}
+
+.red{
+    background: var(--red);
+}
+
+.services__card-title{
+    display: block;
+    color: var(--dark-gray);
+    font-weight: 700;
+    font-size: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.services__card-txt{
+    color: var(--gray);
+    font-weight: 400;
+    font-size: 1.1em;
+    line-height: 1.5em;
+    margin-bottom: 1.5em;
+    width: 90%;
+}
+
+.services__card-btn{
+    background: #E0E0E0;
+    border: none;
+    border-radius: 12px;
+    color: var(--light-gray);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    line-height: 1.5em;
+    padding: 0.5625em 0.8125em 0.5625em 0.8125em;
+}
+
+.services__card-btn:hover{
+    background: var(--blue);
+    color: var(--white);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+    .services{
+        margin-left: 6.2em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .services{
+        margin-left: 3.0625em;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .services{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+        width: 100%;
+        margin-bottom: 9.125em;
+    }
+    .services__cards{
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+        margin-right: 0;
+        width: 70%;
+    }
+    .services__card{
+        margin-left: 0;
+        padding: 1em;
+    }
+    .services__card-title{
+        font-size: 1.5em;
+    }
+    .services__card-txt{
+        font-size: 0.9em;
+    }
+}

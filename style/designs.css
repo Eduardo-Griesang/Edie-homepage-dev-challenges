@@ -1,0 +1,136 @@
+.designs{
+    margin-left: 10.3125em;
+    margin-right: 2.7%;
+    margin-bottom: 13.6875em;
+}
+
+.designs__items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.designs__item{
+    width: 45%;
+}
+
+.more{
+    margin-top: 11.75em;
+}
+
+.designs__item-img{
+    border-radius: 12px;
+    margin-bottom: 1.25em;
+    max-width: 534px;
+    width: 100%;
+}
+
+.designs__item-txt{
+    color: var(--light-gray);
+    font-weight: 300;
+    font-size: 0.875em;
+    line-height: 1.3125em;
+}
+
+.designs__item-title{
+    color: var(--dark-gray);
+    font-weight: 500;
+    font-size: 1.5em;
+    line-height: 2.25em;
+}
+
+.see{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-right: 13em;
+    margin-top: 10em;
+}
+
+.see:hover{
+    cursor: pointer;
+}
+
+.designs__more{
+    color: var(--blue);
+    font-weight: 500;
+    font-size: 1.5em;
+    margin-right: 0.5em;
+}
+
+.blue-arrow{
+    color: var(--blue);
+}
+
+@media screen and (max-width: 1024px) {
+    .designs{
+        margin-left: 6.2em;
+    }
+    .designs__items{
+        justify-content: space-between;
+    }
+    .designs__item{
+        width: 50%;
+    }
+    .designs__item-img{
+        width: 95%;
+    }
+    .see{
+        margin-right: 0.5em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .designs{
+        margin-left: 2.8125em;
+    }
+    .designs__items{
+        justify-content: space-between;
+    }
+    .designs__item{
+        width: 50%;
+    }
+    .designs__item-img{
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .designs{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 6.25em;
+        width: 100%;
+    }
+    .designs__items{
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+    .more{
+        margin-top: 0;
+    }
+    .designs__item{
+        width: 90%;
+        margin-bottom: 2.25em;
+    }
+    .designs__item-img{
+        width: 100%;
+    }
+    .designs__item-txt{
+        font-size: 0.75em;
+    }
+    .designs__item-title{
+        font-size: 1.6875em;
+    }
+    .see{
+        justify-content: start;
+        margin-top: 2.1875em;
+    }
+    .designs__more{
+        font-size: 1.125em;
+    }
+}
