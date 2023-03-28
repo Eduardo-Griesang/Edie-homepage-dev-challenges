@@ -39,3 +39,17 @@ menuBtn.addEventListener("click", () => {
     content.style.display = "flex";
   }
 });
+
+//input
+
+const input = document.querySelectorAll(".email-input"); //pega os dois inputs
+
+input.forEach((i) => {
+  // separa cada input
+  i.addEventListener("click", () => {
+    // para cada input adiciona um evento de clicl
+    i.form[0].defaultValue = ""; // ao clicar, tira o value de 'email' para ''
+  });
+});
+
+
