@@ -1,23 +1,3 @@
-// ao escrolar a pagina chama a função
-window.onscroll = function () {
-  stickHeaderTop();
-};
-
-var header = document.querySelector("#header"); // header
-var stick = header.offsetTop; // topo da pagina
-
-function stickHeaderTop() {
-  if (window.innerWidth > 900) {
-    // se a tela tem menos de 900 px
-    if (window.pageYOffset > stick) {
-      // se o angulo Y da tela esta maior do que o topo da pagina
-      header.classList.add("sticky"); // adiciona a classe para o css grudar ao topo
-    } else {
-      header.classList.remove("sticky"); // remove a classe caso estaja no topo
-    }
-  }
-}
-
 // > 900px menu
 
 const menuBtn = document.querySelector(".menu"); // hamburguer
