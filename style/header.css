@@ -1,4 +1,5 @@
 header{
+    background: var(--white);
     display: flex;
     justify-content: space-between;
     padding-left: 2.7%;
